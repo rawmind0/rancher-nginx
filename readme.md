@@ -17,4 +17,4 @@ docker run -it <repo>/rancher-nginx:<version>
 
 # How it works
 
-* The docker has the entrypoint /usr/bin/start.sh, that it starts nginx, checking a rancher-metadata server. 
+* The docker has the entrypoint /usr/bin/start.sh, that check rancher-metadata server connectivity, starts nginx.
