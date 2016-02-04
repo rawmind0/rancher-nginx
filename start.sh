@@ -25,4 +25,8 @@ function checkrancher {
 
 checkrancher
 
-nginx -g 'daemon off;'
+tail -F /var/log/nginx/error.log &
+
+# Run monit
+log "[ Starting monit... ]"
+/usr/bin/monit -I
